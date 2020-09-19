@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+width: 100vw;
+}
+
+.app {
+  background-color: #f1f2f5;
+  width: 100%;
+}
+
+.app__body {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 450px) {
+  .sidebar {
+    display: none;
+  }
+  .app__body .feed {
+    padding: 0;
+    margin: 0;
+  }
+  .app .header .header__left .header__input {
+    display: none;
+  }
+  .header__center .header__option {
+    padding: 0 10px;
+  }
+  .app .header .header__right {
+    display: none;
+  }
+}
